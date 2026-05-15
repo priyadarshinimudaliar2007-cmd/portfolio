@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Priyadarshini Mudaliar</title>
+
+<style>
+
+/* THEME */
+:root{
+  --bg:#071f17;
+  --card:#0c2b22;
+  --accent:#5cf2a5;
+  --text:#e8fdf5;
+  --muted:#8fbfb0;
+}
+
+body{
+  margin:0;
+  font-family: Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* NAV */
+nav{
+  display:flex;
+  justify-content:space-between;
+  padding:20px 40px;
+  border-bottom:1px solid rgba(255,255,255,0.1);
+}
+
+nav ul{
+  display:flex;
+  gap:20px;
+  list-style:none;
+}
+
+nav a{
+  color:var(--text);
+  text-decoration:none;
+}
+
+/* SECTION */
+section{
+  padding:60px 40px;
+}
+
+h1,h2{
+  margin-bottom:20px;
+}
+
+/* CARD */
+.card{
+  background:var(--card);
+  padding:20px;
+  border-radius:10px;
+  margin-bottom:20px;
+}
+
+/* GRID */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:20px;
+}
+
+/* FORM */
+input, textarea{
+  width:100%;
+  padding:10px;
+  margin:10px 0;
+  background:#09271f;
+  border:1px solid #1f5c49;
+  color:white;
+}
+
+/* BUTTON */
+button{
+  background:var(--accent);
+  border:none;
+  padding:12px;
+  width:100%;
+  cursor:pointer;
+}
+
+/* CERTIFICATE */
+.cert-card{
+  background:var(--card);
+  padding:20px;
+  border-radius:10px;
+  text-decoration:none;
+  color:white;
+  transition:0.3s;
+}
+
+.cert-card:hover{
+  transform:translateY(-5px);
+  border:1px solid var(--accent);
+}
+
+/* POPUP */
+.popup{
+  position:fixed;
+  top:20px;
+  right:20px;
+  background:green;
+  padding:10px;
+  display:none;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav>
+<h2>Priyadarshini</h2>
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#certificates">Certificates</a></li>
+<li><a href="#education">Education</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+<!-- ABOUT -->
+<section id="about">
+<h1>About Me</h1>
+
+<div class="card">
+<p>
+I am a first year Electronics and Telecommunication Engineering student at MIT Academy of Engineering, Pune.
+I am building a strong foundation in core electronics and communication systems and have a keen interest in
+understanding how technology is applied to solve real world engineering problems.
+</p>
+
+<p>
+I enjoy hands on learning and continuously work on improving my technical knowledge and practical skills.
+</p>
+</div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+<h1>Skills</h1>
+
+<div class="card">
+<p>
+C, C++, Object-Oriented Programming, Assembly Language, Circuit Prototyping, Troubleshooting
+</p>
+
+<p>
+Strong teamwork, leadership, communication, and time management skills.
+</p>
+</div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+<h1>Academic Projects</h1>
+
+<div class="grid">
+
+<div class="card">
+<h3>Laser Security System</h3>
+<p>
+Worked in a team to design and build a basic laser based security alert system.
+Contributed to circuit setup, component connections, and troubleshooting during testing.
+</p>
+</div>
+
+<div class="card">
+<h3>Embedded Door Access Control System using Arduino</h3>
+<p>
+Designed and implemented an Arduino-based door locking system using password authentication.
+Integrated keypad input, microcontroller processing, and solenoid lock mechanism.
+</p>
+</div>
+
+<div class="card">
+<h3>Dynamic Target Tracking Robot</h3>
+<p>
+Developed a robot capable of following a specific target using a color sensor.
+Integrated an OLED display to show reactions using a touch sensor.
+</p>
+</div>
+
+<div class="card">
+<h3>Multidoor Interlock System Using Digital Logic Gates</h3>
+<p>
+The Multi-Door Vehicle Interlock System is a digital safety system that uses logic gates to monitor the status of four vehicle doors. If any door is open, the LED turns ON indicating an unsafe condition, while the LED turns OFF only when all doors are properly closed.
+</p>
+</div>
+
+</div>
+</section>
+
+<!-- CERTIFICATES -->
+<section id="certificates">
+<h1>Certificates</h1>
+
+<div class="grid">
+
+<a href="nasscom.pdf" target="_blank" class="cert-card">📜 NASSCOM Digital 101</a>
+<a href="ai-nonprofits.pdf" target="_blank" class="cert-card">🤖 AI Fluency for Nonprofits</a>
+<a href="ai-students.pdf" target="_blank" class="cert-card">🎓 AI Fluency for Students</a>
+<a href="ai-framework.pdf" target="_blank" class="cert-card">📊 AI Framework & Foundations</a>
+<a href="claude101.pdf" target="_blank" class="cert-card">🧠 Claude 101</a>
+
+</div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+<h1>Education</h1>
+
+<div class="card">
+<b>B.Tech, Electronics & Telecommunication Engineering</b><br>
+MIT Academy of Engineering, Pune | 2025 – Present
+</div>
+
+<div class="card">
+<b>Higher Secondary Education</b><br>
+Sardar Dastur Hormazdiar Junior College, Pune | 2025
+</div>
+
+<div class="card">
+<b>Secondary Education</b><br>
+St. Helena’s School, Pune | 2023
+</div>
+
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+<h1>Contact</h1>
+
+<form id="contact-form">
+
+<input type="hidden" name="access_key" value="56da02a4-ac20-488d-83c8-672575e7be44">
+
+<input type="text" name="name" placeholder="Your Name" required>
+<input type="email" name="email" placeholder="Your Email" required>
+<textarea name="message" placeholder="Your Message" required></textarea>
+
+<button type="submit">Send Message</button>
+
+</form>
+</section>
+
+<div id="popup" class="popup">Message Sent ✅</div>
+
+<script>
+const form = document.getElementById("contact-form");
+const popup = document.getElementById("popup");
+
+form.addEventListener("submit", async function(e){
+  e.preventDefault();
+
+  const res = await fetch("https://api.web3forms.com/submit", {
+    method:"POST",
+    body:new FormData(form)
+  });
+
+  if(res.ok){
+    popup.style.display="block";
+    form.reset();
+    setTimeout(()=>popup.style.display="none",3000);
+  }
+});
+</script>
+
+</body>
+</html>
